@@ -1,5 +1,5 @@
 ﻿# landingpage
-<p>This page was developed for tests of technologies frontend, is a full page responsive. use the next technologies:</p>
+<p>This page was developed for frontend technologies tests, it is a full responsive page. it use the next technologies:</p>
  <ul>
   <li>Html5</li>
   <li>Css3</li>
