@@ -1,0 +1,353 @@
+//
+// Index core
+// main index to import all styles of moodle
+//
+// @author      @xrgranados <combinando.ideas@gmail.com>
+//------------------------------------------------------------------------------
+
+@import "variables.less";
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato-bla.woff2') format('woff2'),
+         url('../fonts/lato-bla.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoblack_italic';
+    src: url('../fonts/lato-blaita.woff2') format('woff2'),
+         url('../fonts/lato-blaita.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bol.woff2') format('woff2'),
+         url('../fonts/lato-bol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('../fonts/lato-bolita.woff2') format('woff2'),
+         url('../fonts/lato-bolita.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/lato-hai.woff2') format('woff2'),
+         url('../fonts/lato-hai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latohairline_italic';
+    src: url('../fonts/lato-haiita.woff2') format('woff2'),
+         url('../fonts/lato-haiita.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-lig.woff2') format('woff2'),
+         url('../fonts/lato-lig.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latolight_italic';
+    src: url('../fonts/lato-ligita.woff2') format('woff2'),
+         url('../fonts/lato-ligita.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-reg.woff2') format('woff2'),
+         url('../fonts/lato-reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoitalic';
+    src: url('../fonts/lato-regita.woff2') format('woff2'),
+         url('../fonts/lato-regita.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'times_new_romanregular';
+    src: url('times.woff2') format('woff2'),
+         url('times.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'times_new_romanbold';
+    src: url('timesbd.woff2') format('woff2'),
+         url('timesbd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'times_new_romanregular';
+    src: url('times.woff2') format('woff2'),
+         url('times.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'times_new_romanbold';
+    src: url('timesbd.woff2') format('woff2'),
+         url('timesbd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'times_new_romanbold_italic';
+    src: url('timesbi.woff2') format('woff2'),
+         url('timesbi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'times_new_romanitalic';
+    src: url('timesi.woff2') format('woff2'),
+         url('timesi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-size: 1vw;
+    font-family:@latolight;
+    @media(max-width:800px) {
+      font-size: 5vw;
+    }  
+}
+
+.module {
+  .multi-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+
+    .item {
+        margin: 0 15px;
+        @media(max-width:800px) {
+            margin: 20px;
+        }
+    }
+    
+    @media(max-width:800px) {
+        display: block;
+    } 
+
+    img {
+        width: 100px;
+        margin: 15px 0;
+    }
+    
+    .title-item {
+        font-family: @latobold;
+        margin: 0;
+    }
+  }
+
+  &.parallax {
+    .information {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      
+      &.testimonial {
+        p {
+            font-family: @latohairline_italic;
+          &.text {
+            font-size: 2vw;
+            line-height: 30px;
+
+            @media(max-width:800px) {
+                font-size: 5vw;
+                line-height: 25px;
+                text-align: center;
+            }
+          }
+
+          &.made {
+              font-size: 1vw;
+              margin: 10px;
+        
+            @media(max-width:800px) {
+                font-size: 3vw;
+            }
+          }
+        }
+      }
+      
+      p {
+          margin: 0;
+          color: @white;
+          &.primary {
+            font-size:@primary-size;
+            font-family: @latobold;
+            
+            @media(max-width:800px) {
+                font-size: 13vw;
+            }    
+          }
+          &.italic-font {
+            font-family: @times_new_romanbold_italic;
+            font-style: italic;
+            font-size: @size-italic;
+            margin-bottom: 0;
+            line-height: 15px;
+
+            @media(max-width:800px) {
+                font-size: 5.5vw;
+            }    
+          }
+
+          &.slogan {
+            font-size: 1vw;
+            font-family:@latoregular;
+            margin: 30px;
+
+            @media(max-width:800px) {
+              font-size: 4vw;
+              margin: 14px;
+              width: 200px;
+              text-align: center;
+            }
+          }
+      }
+
+      button {
+        background: none;
+        color: white;
+        height: 50px;
+        width: 200px;
+        border: 2px solid white;
+      }
+    }
+  }
+
+  &.content {
+    .title-item {
+      font-family: @latobold;
+      margin: 0;
+    }
+
+    &.grid-content {
+      .title-item  {
+          text-align: center;
+          padding: 25px;
+      }  
+      .grid {
+        width: 100%;
+
+        @media(max-width:800px) {
+          float: left;
+          width: 100%;
+          height: auto;
+          text-align: left;
+          display: table;
+          margin: 0;
+          border-spacing: 0;
+        }
+
+        img {
+          width: 20%;
+          float: left;
+  
+          @media(max-width:800px) {
+            width: 50%;
+            vertical-align:bottom;
+            float: none;
+          }
+        }
+      }
+    }
+
+    &.limit {
+      padding:40px 0 0;
+    }
+    .content-iphone {
+        background-color: #f7f7f7;
+        background-image: url(../img/iphone.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10px;
+        background-position: 10% bottom;
+        background-size: auto 80%;
+
+        @media(max-width:800px) {
+          background-position: center bottom;
+          background-size: auto 200px;
+        }
+        
+        .row-left {
+          width: 50%;
+          float: right;
+          padding: 220px 0;
+
+          @media(max-width:800px) {
+              width: 100%;
+              padding: 50px 0 220px 0;
+          }         
+
+          p {
+            margin:10px 0;
+          } 
+        }
+        
+    }
+  }
+}
+footer{
+    background: #f7f7f7;
+    float: left;
+    width: 100%;
+    height: 100px;
+
+  .copyright {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+
+      @media(max-width:800px) {
+        flex-direction: column;
+      }         
+      small {
+          color: black;
+      }
+  }
+}
